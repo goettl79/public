@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lato', sans-serif; /* Professional and clean font */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text for better readability */
+  }
+  
+  header {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #007bff; /* Brand color for emphasis */
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .contact {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+  
+  .contact li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .contact li a {
+    color: inherit; /* Inherit text color from body */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .contact li a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Rounded corners for a softer look */
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  .work-experience, .education {
+    background-color: #fff;
+  }
+  
+  .work-experience h3, .education h3 {
+    font-weight: bold;
+  }
+  
+  .work-experience ul, .education ul {
+    padding-left: 20px; /* Indent list items for better readability */
+  }
+  
+  .work-experience li, .education li {
+    margin-bottom: 5px;
+  }
+  
