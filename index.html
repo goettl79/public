@@ -3,112 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georg Öttl - CV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
             margin-bottom: 10px;
         }
 
-        h2 {
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
+        .section p {
             margin-bottom: 5px;
         }
 
-        a {
-            color: #000;
-            text-decoration: none;
+        .section ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .section ul li {
+            margin-bottom: 5px;
+        }
+
+        .section ul li strong {
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <h1>Georg Öttl</h1>
-    <hr>
-    <h2>Contact</h2>
-    <ul>
-        <li><a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
-        <li><a href="www.linkedin.com/in/georgoettl">LinkedIn (www.linkedin.com/in/georgoettl)</a></li>
-        <li></li><a href="https://graz.social/@goettl" rel="me">Mastodon</a>
-    </ul>
-    <h2>Summary</h2>
-    <p>Experienced Leader in Business-Critical Enterprise Applications. Results-Driven and Passionate About Technology.
-        Graz, Styria, Austria.</p>
-    <h2>Top Skills</h2>
-    <ul>
-        <li>Project Reporting</li>
-        <li>Board Presentations</li>
-        <li>Presentations</li>
-    </ul>
-    <h2>Languages</h2>
-    <ul>
-        <li>German (Native or Bilingual)</li>
-        <li>English (Full Professional)</li>
-    </ul>
-    <h2>Certifications</h2>
-    <ul>
-        <li>Certified Agile Test Driven Development</li>
-    </ul>
-    <h2>Publications</h2>
-    <ul>
-        <li>Software Monitoring with Prometheus</li>
-        <li>DevOps in Practice</li>
-    </ul>
-    <h2>Experience</h2>
-    <h3>Österreichische Gesundheitskasse (Austrian Health Insurance Fund)</h3>
-    <h4>Innovation Manager</h4>
-    <p>November 2020 - Present (3 years 6 months), Graz, Styria, Austria</p>
-    <ul>
-        <li>Knowledge Discovery using the Knowminer Framework</li>
-        <li>Lessons Learned in Distributed Agile Engineering on a Large Scale Integration Solution</li>
-        <li>Mesos, Docker, CoreOS: How to Make Builds Reproducible</li>
-    </ul>
-    <h3>DCCS IT Business Solutions</h3>
-    <h4>Lead Developer and Software Architect</h4>
-    <p>July 2020 - October 2020 (4 months), Graz, Styria, Austria</p>
-    <ul>
-        <li>Initiating projects for Enterprise IT Systems, adhering to DevOps and Microservice standards</li>
-    </ul>
-    <h3>Dynatrace</h3>
-    <h4>Development Team Lead</h4>
-    <p>March 2019 - April 2020 (1 year 2 months), Graz, Styria, Austria</p>
-    <ul>
-        <li>Organizing the initial development process and the first projects</li>
-        <li>Coordinating implementations, liaising with internal customers, and facilitating cross-site development</li>
-        <li>Projects in the domain of license management and sales price predictions</li>
-        <li>Establishing an observable DevOps/Java/Angular microservice architecture in a robust k8s/AWS infrastructure
-        </li>
-        <li>Introducing Golang for DevOps tooling and Python for data science services</li>
-    </ul>
-    <h3>ALP.Lab GmbH</h3>
-    <h4>Lead Product Developer</h4>
-    <p>March 2018 - February 2019 (1 year)</p>
-    <ul>
-        <li>Developing software data products from autonomous driving vehicles and road infrastructure</li>
-        <li>Launching a premier product, extracting, transforming, and loading data from public road tests into various
-            cloud formats</li>
-        <li>Development pipeline including video anonymization and integrating lidar/GIS data with car-generated data
-        </li>
+    <div class="section">
+        <h2>Contact</h2>
+        <p>georg.oettl@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/georgoettl">LinkedIn Profile</a></p>
+        <a href="https://graz.social/@goettl" rel="me">Mastodon</a>
+        <p>Graz, Styria, Austria</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+
+        <h3>Österreichische Gesundheitskasse - Innovation Manager</h3>
+        <p><strong>November 2020 - Present (3 years 6 months)</strong></p>
+        <p>Graz, Styria, Austria</p>
+        <ul>
+            <li>Coordinated and guided cross-functional, short-lived teams and initiatives.</li>
+            <li>Leading an initiative to establish permanent on-premise Robotic Process Automation (RPA) capabilities.
+            </li>
+            <li>Actively contributing to AI projects and applying cutting-edge technologies.</li>
+        </ul>
+
+        <h3>DCCS IT Business Solutions - Lead Developer and Software Architect</h3>
+        <p><strong>July 2020 - October 2020 (4 months)</strong></p>
+        <p>Graz, Styria, Austria</p>
+        <ul>
+            <li>Initiated projects for Enterprise IT Systems and adhered to DevOps and Microservice standards.</li>
+            <li>Proposed a modern system architecture for a large German car manufacturer.</li>
+            <li>Contributed significantly to project acquisition.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Technische Universität Graz</strong></p>
+        <p>MSc., Computer Engineering · (1999 - 2008)</p>
+
+        <p><strong>Norwegian University of Science and Technology (NTNU)</strong></p>
+        <p>Computer- und Informationswissenschaften, allgemein · (2004 - 2004)</p>
+    </div>
 
 </body>
+
+</html>
