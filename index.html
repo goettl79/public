@@ -7,101 +7,167 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
-        h1, h2, h3 {
-            color: #2c3e50;
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        .contact, .skills, .languages, .certifications, .publications, .summary, .experience, .education {
-            background-color: #ffffff;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        header {
+            text-align: center;
+            margin-bottom: 40px;
         }
-        h2 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-        }
-        img.profile-pic {
+        header img {
             max-width: 150px;
             border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        section ul li {
+            margin-bottom: 10px;
+        }
+        section p, section ul li {
+            font-size: 1.1em;
+        }
+        .contact, .skills, .languages, .certifications, .publications, .experience, .education {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .column {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .column {
+                flex: 0 0 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Georg Öttl</h1>
-    <img src="man.jpg" alt="Georg Öttl" class="profile-pic">
-    <p>Innovation Manager @ Österreichische Gesundheitskasse | Spezialisiert auf DevOps, Microservices, KI, RPA</p>
-    <p>Graz, Steiermark, Österreich</p>
+    <div class="container">
+        <header>
+            <img src="man.jpg" alt="Georg Öttl">
+            <h1>Georg Öttl</h1>
+            <p>Innovation Manager @ Österreichische Gesundheitskasse | Spezialisiert auf DevOps, Microservices, KI, RPA</p>
+            <p>Graz, Steiermark, Österreich</p>
+        </header>
 
-    <div class="contact">
-        <h2>Kontakt</h2>
-        <p>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">www.linkedin.com/in/georgoettl</a></p>
-    </div>
+        <section class="contact">
+            <div class="column">
+                <h2>Kontakt</h2>
+                <p>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">www.linkedin.com/in/georgoettl</a></p>
+            </div>
+            <div class="column">
+                <h2>Fachkenntnisse</h2>
+                <ul>
+                    <li>Informationstechnologie</li>
+                    <li>Modernisierung von IT-Systemen</li>
+                    <li>Datenstrategien</li>
+                </ul>
+            </div>
+        </section>
 
-    <div class="skills">
-        <h2>Fachkenntnisse</h2>
-        <ul>
-            <li>Informationstechnologie</li>
-            <li>Modernisierung von IT-Systemen</li>
-            <li>Datenstrategien</li>
-        </ul>
-    </div>
+        <section class="languages">
+            <div class="column">
+                <h2>Sprachkenntnisse</h2>
+                <ul>
+                    <li>Deutsch (Muttersprache)</li>
+                    <li>Englisch (Fließend)</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Zertifikate</h2>
+                <p>Certified Agile Test Driven Development</p>
+            </div>
+        </section>
 
-    <div class="languages">
-        <h2>Sprachkenntnisse</h2>
-        <ul>
-            <li>Deutsch (Muttersprache)</li>
-            <li>Englisch (Fließend)</li>
-        </ul>
-    </div>
+        <section class="publications">
+            <h2>Veröffentlichungen</h2>
+            <ul>
+                <li>Softwaremonitoring mit Prometheus</li>
+                <li>DevOps in der Praxis</li>
+                <li>Knowledge Discovery mit dem Knowminer Framework</li>
+                <li>Erfahrungen in der verteilten agilen Entwicklung</li>
+                <li>Mesos, Docker, CoreOS: Reproduzierbare Builds</li>
+            </ul>
+        </section>
 
-    <div class="certifications">
-        <h2>Zertifikate</h2>
-        <p>Certified Agile Test Driven Development</p>
-    </div>
+        <section class="summary">
+            <h2>Über mich</h2>
+            <p>Als erfahrener IT-Experte mit umfangreichem Fachwissen in verschiedenen Branchen habe ich zahlreiche Projekte erfolgreich geleitet. Meine Expertise liegt in der Implementierung innovativer Technologien, und ich bin stets bestrebt, komplexe Herausforderungen in dynamischen Umgebungen zu meistern.</p>
+        </section>
 
-    <div class="publications">
-        <h2>Veröffentlichungen</h2>
-        <ul>
-            <li>Softwaremonitoring mit Prometheus</li>
-            <li>DevOps in der Praxis</li>
-            <li>Knowledge Discovery mit dem Knowminer Framework</li>
-            <li>Erfahrungen in der verteilten agilen Entwicklung</li>
-            <li>Mesos, Docker, CoreOS: Reproduzierbare Builds</li>
-        </ul>
-    </div>
+        <section class="experience">
+            <h2>Berufserfahrung</h2>
+            <article>
+                <h3>Österreichische Gesundheitskasse</h3>
+                <p><strong>Innovation Manager</strong> | November 2020 - Heute | Graz, Steiermark, Österreich</p>
+                <p>Leitung und Koordination von IT-Projekten mit Schwerpunkt auf digitale Innovationen, einschließlich der Einführung von Robotic Process Automation (RPA) und Künstlicher Intelligenz (KI).</p>
+            </article>
+            
+            <article>
+                <h3>Frühere Berufserfahrung</h3>
+                <p>Umfassende Erfahrung in Softwareentwicklung, Systemarchitektur und Teamführung in verschiedenen führenden Unternehmen, darunter DCCS IT Business Solutions, Dynatrace und ALP.Lab. Umsetzung moderner IT-Lösungen und Leitung komplexer Projekte.</p>
+            </article>
+        </section>
 
-    <div class="summary">
-        <h2>Über mich</h2>
-        <p>Als erfahrener IT-Experte mit einem breiten Spektrum an Kenntnissen habe ich zahlreiche Projekte in verschiedenen Branchen geleitet, darunter Forschung, Großunternehmen, Startups und öffentliche Verwaltung. Meine Leidenschaft gilt der Implementierung innovativer Lösungen unter Einsatz moderner Technologien. Ich genieße es, Herausforderungen in dynamischen Umgebungen zu meistern und mein Wissen kontinuierlich weiterzuentwickeln.</p>
-    </div>
+        <section class="education">
+            <h2>Bildung</h2>
+            <article>
+                <h3>Technische Universität Graz</h3>
+                <p><strong>M.Sc., Computer Engineering</strong> | 1999 - 2008</p>
+            </article>
 
-    <div class="experience">
-        <h2>Berufserfahrung</h2>
-        <h3>Österreichische Gesundheitskasse</h3>
-        <p><strong>Innovation Manager</strong> | November 2020 - Heute | Graz, Steiermark, Österreich</p>
-        <p>In meiner aktuellen Position leite ich IT-Projekte und Initiativen mit dem Ziel, digitale Innovationen voranzutreiben. Zu meinen Aufgaben gehört die Koordination von interdisziplinären Teams wie ich z.B. in der Führung der Initiativen Robotic Process Automation (RPA) unter beweis stellen konnte.</p>
-        
-        <h3>Frühere Berufserfahrung</h3>
-        <p>In meinen früheren Positionen habe ich umfassende Erfahrung in der Softwareentwicklung, Systemarchitektur und Teamführung gesammelt. Ich habe unter anderem als Lead Developer, Softwarearchitekt und Teamleiter bei verschiedenen namhaften Unternehmen wie DCCS IT Business Solutions, Dynatrace und ALP.Lab gearbeitet. In diesen Rollen habe ich moderne IT-Lösungen implementiert, komplexe Projekte geleitet und innovative Technologien eingeführt.</p>
-    </div>
-
-    <div class="education">
-        <h2>Bildung</h2>
-        <h3>Technische Universität Graz</h3>
-        <p><strong>M.Sc., Computer Engineering</strong> | 1999 - 2008</p>
-
-        <h3>Norwegian University of Science and Technology (NTNU)</h3>
-        <p><strong>Computer- und Informationswissenschaften</strong> | 2004</p>
+            <article>
+                <h3>Norwegian University of Science and Technology (NTNU)</h3>
+                <p><strong>Computer- und Informationswissenschaften</strong> | 2004</p>
+            </article>
+        </section>
     </div>
 </body>
 </html>
