@@ -39,7 +39,7 @@
 
         header h1 {
             margin-top: 15px;
-            font-size: 2.8em;
+            font-size: 2.5em;
             color: #2c3e50;
         }
 
@@ -64,17 +64,21 @@
         section p,
         section ul li {
             font-size: 1.1em;
+            margin-bottom: 10px;
         }
 
-        .contact,
-        .skills,
-        .languages,
-        .certifications,
-        .experience,
-        .education {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .contact ul,
+        .skills ul,
+        .languages ul,
+        .publications ul {
+            padding-left: 20px;
+        }
+
+        .contact ul li,
+        .skills ul li,
+        .languages ul li,
+        .publications ul li {
+            margin-bottom: 10px;
         }
 
         .contact a {
@@ -86,45 +90,10 @@
             text-decoration: underline;
         }
 
-        .column {
-            flex: 0 0 48%;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .column {
-                flex: 0 0 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-                /* Kleinere Schrift auf Mobilgeräten */
-            }
-
-            header p,
-            section p {
-                font-size: 1em;
-                /* Kleinere Schriftgrößen für bessere Lesbarkeit */
-            }
-
-            .container {
-                padding: 10px;
-                /* Weniger Padding für kleinere Bildschirme */
-            }
-        }
-
         .summary p {
             font-size: 1.2em;
             line-height: 1.8;
             color: #444;
-        }
-
-        .skills ul,
-        .languages ul {
-            list-style-type: disc;
-            padding-left: 20px;
         }
 
         article h3 {
@@ -134,7 +103,22 @@
         }
 
         article p {
-            margin: 5px 0;
+            margin: 5px 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p,
+            section p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -150,24 +134,23 @@
         </header>
 
         <section class="contact">
-            <div class="column">
-                <h2>Kontakt</h2>
-                <ul>
-                    <li>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">linkedin.com/in/georgoettl</a></li>
-                    <li>Mastodon: <a href="https://graz.social/@goettl">Mastodon</a> </li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Fachkenntnisse</h2>
-                <ul>
-                    <li>IT-Modernisierung und Systemarchitektur</li>
-                    <li>Digitale Innovation und Automatisierung</li>
-                    <li>Cloud-Native Anwendungen und Microservices</li>
-                    <li>DevOps-Strategien und Agile Entwicklung</li>
-                    <li>Datenanalyse und Künstliche Intelligenz</li>
-                </ul>
-            </div>
+            <h2>Kontakt</h2>
+            <ul>
+                <li>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">linkedin.com/in/georgoettl</a></li>
+                <li>Mastodon: <a href="https://graz.social/@goettl">Mastodon</a></li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Fachkenntnisse</h2>
+            <ul>
+                <li>IT-Modernisierung und Systemarchitektur</li>
+                <li>Digitale Innovation und Automatisierung</li>
+                <li>Cloud-Native Anwendungen und Microservices</li>
+                <li>DevOps-Strategien und Agile Entwicklung</li>
+                <li>Datenanalyse und Künstliche Intelligenz</li>
+            </ul>
         </section>
 
         <section class="languages">
@@ -182,7 +165,7 @@
             <h2>Über mich</h2>
             <p>Mit über 15 Jahren Erfahrung in der IT-Branche bin ich ein Innovationstreiber, spezialisiert auf die
                 Modernisierung von IT-Systemen und die Einführung digitaler Technologien. Ich habe erfolgreich
-                transformative Projekte geleitet, in ihnen gearbeitet und konnte hier umfänglich Erahrungen sammeln.
+                transformative Projekte geleitet, in ihnen gearbeitet und konnte hier umfänglich Erfahrungen sammeln.
                 Meine Leidenschaft liegt in der Lösung komplexer technischer Herausforderungen, wobei ich stets auf
                 Qualität setze.</p>
         </section>
@@ -192,7 +175,7 @@
             <article>
                 <h3>Österreichische Gesundheitskasse</h3>
                 <p><strong>Innovation Manager</strong> </p>
-                <p>Leitung strategischer Projekte und Initiativen, Implementierung von KI- und RPA-Lösungen, sowie
+                <p>Leitung strategischer Projekte und Initiativen, Implementierung von KI- und RPA-Lösungen sowie
                     Digitalisierung von Unternehmensprozessen.</p>
             </article>
 
@@ -200,35 +183,30 @@
                 <h3>Dynatrace</h3>
                 <p><strong>Development Team Lead</strong></p>
                 <p>Leitung und Kick-Off eines Entwicklerteams zur Implementierung von Business- und Automatisierung
-                    Projekten im Bereich Geschäfts und Lizenz- modellen sowie prediktiver Analytic.</p>
+                    Projekten im Bereich Geschäfts- und Lizenzmodellen sowie prädiktiver Analytik.</p>
             </article>
 
             <article>
-                <h3>BearingPoint</strong></h3>
+                <h3>BearingPoint</h3>
                 <p><strong>Development Team Lead</strong></p>
                 <p>Als Teamleiter organisierte ich ein DevOps-Team und führte containerbasierte Technologien
-                    unternehmensweit ein. Wir entwickelten und migrierten in Summe über 120 Services für 200
-                    Entwickler im Konzern.</p>
+                    unternehmensweit ein. Wir entwickelten und migrierten über 120 Services für 200 Entwickler im
+                    Konzern.</p>
                 <p>Als Senior Engineer integrierte ich das Hauptprodukt "R6" in Systeme von Telefonie-, Maut- und
-                    TV-Anbietern
-                    (Irland, Australien, Albanien, ...).
-                    Ich arbeitete in vielen agilen Projekten, was ich OTS-Konferenz in Maribor zusammenfassend auch
-                    öffentlich präsentieren durfte.</p>
+                    TV-Anbietern. Ich präsentierte agile Projekterfahrungen auf der OTS-Konferenz in Maribor.</p>
             </article>
 
             <article>
                 <h3>Technische Universität Graz & Know-Center</h3>
                 <p><strong>Research Assistant / Computer Scientist</strong></p>
-                <p>Während meiner Zeit an der Technischen Universität Graz und am Know-Center arbeitete ich als
-                    wissenschaftlicher Assistent oder Java-Entwickler in verschiedenen interdisziplinären
-                    und internationalen Forschungsprojekten mit dem Schwerpunkt KI und im speziellen NLP.
-                    Ein großer Erfolg war die Akquise von 400.000 € Fördermitteln für das NextTell-Projekt, sowie ein
-                    erfolgreicher Prototyp für das Bundesministerium für Finanzen im Bereich des Wissensmanagements.</p>
+                <p>Wissenschaftlicher Assistent und Java-Entwickler in verschiedenen Forschungsprojekten mit dem
+                    Schwerpunkt KI und NLP. Erfolgreiche Akquise von 400.000 € für das NextTell-Projekt und Entwicklung
+                    eines Prototyps für das Bundesministerium für Finanzen im Bereich Wissensmanagement.</p>
             </article>
+
             <p><strong>Voller Lebenslauf:</strong> <a href="https://www.linkedin.com/in/georgoettl">Georg
                     Öttl@LinkedIn</a></p>
         </section>
-
 
         <section class="publications">
             <h2>Veröffentlichungen</h2>
