@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reveal.js Presentation</title>
+  <meta name="description" content="Presentation about Georg Öttl, Innovation Manager specializing in DevOps, AI, and RPA.">
+  <meta name="author" content="Georg Öttl">
+  <title>Georg Öttl - Innovation Manager</title>
 
+  <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
   
-
+  <!-- Custom styling for fonts and layout adjustments -->
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    .reveal h1, .reveal h2 {
+      color: #ffffff;
+      text-align: center;
+    }
+    .reveal p {
+      font-size: 1.6rem;
+    }
+    .reveal ul {
+      list-style: none;
+      padding: 0;
+    }
+    .reveal ul li {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .reveal section img {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+      border-radius: 50%;
+    }
+    .reveal a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,36 +50,39 @@
   <div class="reveal">
     <div class="slides">
 
+      <!-- Introduction slide -->
       <section>
-        <img src="man.jpeg" alt="Georg Öttl">
+        <!--img src="man.jpeg" alt="Photo of Georg Öttl"-->
         <h1>Georg Öttl</h1>
         <p>Innovation Manager @ Österreichische Gesundheitskasse</p>
         <p>Spezialist für DevOps, Microservices, Künstliche Intelligenz und Robotic Process Automation (RPA)</p>
         <p>Graz, Steiermark, Österreich</p>
       </section>
 
+      <!-- CV Slide with progressive reveal -->
       <section>
         <h2>Short CV</h2>
-        <p class="fragment r-frame"><strong>Branchen:</strong> Forschung, Großunternehmen, Startups. Seit > 3 Jahren in
-          Verwaltung.</p>        
-        <p class="fragment r-frame"><strong>Themen:</strong> Automatisierung, Digitalisierung, Big Data und Künstliche
-          Intelligenz. Informatiker.</p>
-          <p class="fragment r-frame"><strong>Position:</strong> Organisator, Innovationsmanager, ÖGK@IT.IuI</p>
+        <p class="fragment r-frame"><strong>Branchen</strong><br>Forschung, Großunternehmen, Startups. Seit > 3 Jahren in
+          Verwaltung.</p>
+        <p class="fragment r-frame"><strong>Themen</strong><br> Automatisierung, Digitalisierung, Big Data und Künstliche
+          Intelligenz. [Informatiker]</p>
+        <p class="fragment r-frame"><strong>Position</strong><br> Organisator, Innovationsmanager, ÖGK@IT.IuI</p>
       </section>
 
-
+      <!-- Contact slide with interactive links -->
       <section>
-        <h2><strong>Kontakt:</strong></h2>
+        <h2>Kontakt</h2>
         <ul>
-          <li>📧  georg.oettl@gmail.com</li>
-          <li>🌐 <a href="https://oettl.work">https://oettl.work</a> </li>
-          <li>🌐 <a
-              href="https://www.linkedin.com/in/georgoettl/">https://www.linkedin.com/in/georgoettl/</a></li>
+          <li>📧 <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
+          <li>🌐 <a href="https://oettl.work" target="_blank">oettl.work</a></li>
+          <li>🔗 <a href="https://www.linkedin.com/in/georgoettl/" target="_blank">LinkedIn Profile</a></li>
         </ul>
       </section>
+
     </div>
   </div>
 
+  <!-- Reveal.js Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
   <script>
     Reveal.initialize({
@@ -55,9 +91,17 @@
       slideNumber: true,
       history: true,
       center: true,
-      transition: 'slide' // You can also choose fade, convex, concave, zoom, none
+      transition: 'convex', // You can also choose slide, fade, concave, zoom, none
+      fragments: true,      // Enable fragment animations for gradual reveal
+      autoSlide: 0,         // Set auto slide if needed, e.g., 5000ms for 5 seconds
+      backgroundTransition: 'fade',  // Background transition effect
+      dependencies: [
+        { src: 'https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js' },
+        { src: 'https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js', async: true }
+      ]
     });
   </script>
+
 </body>
 
 </html>
