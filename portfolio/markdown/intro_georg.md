@@ -23,7 +23,7 @@ Organisator / Innovationsmanager@ÖGK
 - [Your hobbies or interests]
 
 ---
-
+a
 ## **Contact Info:**
 
 - 📧 Email: [Your Email]
