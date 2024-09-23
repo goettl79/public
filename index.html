@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Lebenslauf von Georg Öttl, Innovation Manager bei der Österreichischen Gesundheitskasse. Expertise in DevOps, Microservices, Künstliche Intelligenz und Robotic Process Automation (RPA).">
+    <meta name="author" content="Georg Öttl">
+    <meta name="keywords"
+        content="Georg Öttl, Lebenslauf, Innovation Manager, DevOps, Microservices, Künstliche Intelligenz, RPA">
     <title>Lebenslauf - Georg Öttl</title>
     <style>
         body {
@@ -106,6 +109,10 @@
             margin: 5px 0 15px;
         }
 
+        a:hover {
+            color: #ff5722;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -119,6 +126,13 @@
             .container {
                 padding: 10px;
             }
+
+            .contact ul,
+            .skills ul,
+            .languages ul,
+            .publications ul {
+                padding-left: 10px;
+            }
         }
     </style>
 </head>
@@ -126,7 +140,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="man.jpeg" alt="Georg Öttl">
+            <img src="me.jpeg" alt="Portrait von Georg Öttl">
             <h1>Georg Öttl</h1>
             <p><em>Informatiker, Innovationsmanager und Projektleiter mit umfassender technischer Expertise</em></p>
             <p><strong>@ Österreichische Gesundheitskasse</strong></p>
@@ -135,10 +149,12 @@
 
         <section class="contact">
             <h2>Kontakt</h2>
-            <ul>
-                <li>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">linkedin.com/in/georgoettl</a></li>                
-            </ul>
+            <address>
+                <ul>
+                    <li>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">linkedin.com/in/georgoettl</a></li>
+                </ul>
+            </address>
         </section>
 
         <section class="skills">
@@ -209,15 +225,20 @@
         <section class="publications">
             <h2>Veröffentlichungen</h2>
             <ul>
-                <li>Softwaremonitoring mit Prometheus</li>
-                <li>DevOps in der Praxis</li>
-                <li>Knowledge Discovery mit dem Knowminer Framework</li>
-                <li>Erfahrungen in der verteilten agilen Entwicklung</li>
-                <li>Mesos, Docker, CoreOS: Reproduzierbare Builds</li>
+                <li><a href="https://jax.de/devops-continuous-delivery/software-monitoring-mit-prometheus/"
+                        target="_blank">Softwaremonitoring mit Prometheus</a></li>
+                <li><a href="https://jaxenter.de/devops-oettl-infonova-50400" target="_blank">DevOps in der Praxis</a>
+                </li>
+                <li><a href="https://www.iadisportal.org/digital-library/knowledge-discovery-using-the-knowminer-framework"
+                        target="_blank">Knowledge Discovery mit dem Knowminer Framework</a></li>
+                <li><a href="https://www.ots.si/Prejsnje_konference/OTS_2012/Povzetki.html" target="_blank">Erfahrungen
+                        in der verteilten agilen Entwicklung</a></li>
+                <li><a href="https://jaxenter.de/mesos-docker-coreos-wie-sie-builds-reproduzierbar-machen-30901"
+                        target="_blank">Mesos, Docker, CoreOS: Reproduzierbare Builds</a></li>
             </ul>
         </section>
     </div>
-    <div style="display:none"></div><a href="https://graz.social/@goettl">Mastodon</a></div>
+    <div style="display:none"><a href="https://graz.social/@goettl">Mastodon</a></div>
 </body>
 
 </html>
