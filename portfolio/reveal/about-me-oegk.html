@@ -10,14 +10,11 @@
 
   <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
   
   <!-- Custom styling for fonts and layout adjustments -->
   <style>
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-    }
-
+    
     .reveal h1, .reveal h2 {
       color: #ffffff;
       text-align: center;
@@ -29,6 +26,8 @@
       font-size: 1.8rem;
       line-height: 1.6;
       text-align: center;
+      color: #f2f2f2; /* Soft gray for paragraph and list text */
+
     }
 
     .reveal ul {
@@ -38,7 +37,7 @@
     }
 
     .reveal ul li {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 15px;
     }
 
@@ -50,7 +49,7 @@
     }
 
     .reveal a {
-      color: #1e90ff;
+      color: #007bff; /* Softer blue for links */
       text-decoration: none;
       font-weight: bold;
     }
@@ -60,7 +59,7 @@
     }
 
     .reveal section {
-      background-color: #333;
+      background-color: #cc4e4e;
       padding: 40px;
       border-radius: 10px;
     }
@@ -76,19 +75,19 @@
       <section>
         <img src="me.jpeg" alt="Photo of Georg Öttl">
         <h1>Georg Öttl</h1>
-        <p><em>Informatiker, Innovationsmanager und Projektleiter mit umfassender technischer Expertise</em></p>
-        <p><strong>@ Österreichische Gesundheitskasse</strong></p>
-        <p>Graz, Steiermark, Österreich</p>
+        <p><em>Informatiker, Innovationsmanager und Initiativenleiter</em></p>
+        <p><small>... mit umfassender IT Expertise</small></p>
+        <p><strong>@Österreichische Gesundheitskasse</strong></p>
       </section>
 
       <!-- CV Slide with progressive reveal -->
       <section>
         <h2>Berufserfahrung</h2>
         <ul>
-          <li class="fragment">Automatisierung, Digitalisierung, Big Data, Künstliche Intelligenz</li>
-          <li class="fragment">Erfahrung in Forschung, Großunternehmen und Startups</li>
+          <li class="fragment">Automatisierung, Digitalisierung, Softwareentwicklung, Künstliche Intelligenz</li>
+          <li class="fragment"> Forschung, Großunternehmen und Startups</li>
           <li class="fragment">Informatiker, Innovationsmanager</li>
-          <li class="fragment">Über 3 Jahre dabei</li>
+          <li class="fragment"> > 3 JahreÖGK</li>
         </ul>
       </section>
 
@@ -118,6 +117,8 @@
       fragments: true,      // Enable fragment animations for gradual reveal
       autoSlide: 0,         // Set auto slide if needed, e.g., 5000ms for 5 seconds
       backgroundTransition: 'fade',  // Background transition effect
+      pdfSeparateFragments: false,
+      pdfMaxPagesPerSlide: 2, 
       dependencies: [
         { src: 'https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js' },
         { src: 'https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js', async: true }
