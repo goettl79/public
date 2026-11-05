@@ -1,6 +1,6 @@
 # Dipl.-Ing. Georg Öttl
 
-**Information Security Manager & IT-Führungskraft**  
+**Senior IT-Leader • Softwarearchitekt • Information Security**  
 Graz, Österreich | +43 650 669 30 93 | georg.oettl@gmail.com  
 [linkedin.com/in/georgoettl](https://www.linkedin.com/in/georgoettl) | [oettl.work](https://oettl.work)
 
@@ -8,40 +8,40 @@ Graz, Österreich | +43 650 669 30 93 | georg.oettl@gmail.com
 
 ## Kurzprofil
 
-Erfahrene IT-Führcungskraft, Softwarearchitekt und Information Security Manager (Dipl.-Ing. Telematik, TU Graz) mit über 20 Jahren Berufserfahrung in Softwareentwicklung, IT-Infrastruktur, Informationssicherheit und Digitalisierung (u. a. ÖGK, Dynatrace, BearingPoint). Umfassende Expertise im Aufbau und der Operationalisierung von unternehmensweiten ISMS-Programmen (ISO 27001, NIS2, CRA), in cloud-nativen Microservice-Architekturen (Kubernetes, AWS/Azure, DevOps) sowie in der Einführung von Automatisierungs- und KI-Plattformen (RPA, Fraud Detection).
+Vielseitige IT-Führungskraft, Softwarearchitekt und Information Security Manager (Dipl.-Ing. Telematik, TU Graz) mit über 20 Jahren Erfahrung über den gesamten Technologielebenszyklus hinweg. Bewährte Erfolge in der Modernisierung gewachsener Unternehmenssysteme (120+ Microservices, 200+ Entwickler), im Aufbau agiler Plattform- und Engineering-Teams sowie in der Etablierung moderner Governance- und Sicherheitsstandards (ISO 27001, NIS2, SOX). Verbindet strategische Führungskompetenz mit fundierter technischer Umsetzungskraft in verteilten Architekturen, Cloud-Native und Prozessautomatisierung.
 
 ---
 
 ## Kernkompetenzen & Schwerpunkte
 
-- **Informationssicherheit & Governance:** ISMS (zertifizierter ISO 27001 Manager & Auditor), Risikomanagement, NIS2 & CRA, sozialträgerübergreifendes Lieferanten-Risikomanagement, DSGVO / Privacy
-- **Architektur & Cloud-Native:** Verteilte Systeme, Microservices, Kubernetes (k8s), Docker, AWS, Microsoft Azure, Prometheus Monitoring, SRE & DevOps Enablement
-- **Team- & Organisationsführung:** Disziplinäre und fachliche Leitung (bis zu 200 Entwickler:innen / 30 Teams), Product Ownership (Agile / Scrum), Moderation komplexer Stakeholder-Gremien
-- **Automatisierung & Angewandte KI:** Robotic Process Automation (RPA), KI-gestützte Betrugserkennung (VPK-KI), Datenpipelines & Anonymisierung
+- **IT-Management & Führung:** Disziplinäre und fachliche Leitung (bis zu 200 Entwickler:innen / 30 agile Teams), Agile Transformation (Scrum, Product Ownership), Stakeholder-Management & Verhandlungsführung
+- **Software- & Cloud-Architektur:** Verteilte Systeme, Microservices, Kubernetes (k8s), Docker, Microsoft Azure, AWS, Systemmigration, Prometheus Monitoring, SRE & DevOps Enablement
+- **Informationssicherheit & Governance:** ISMS (zertifizierter ISO 27001 Manager & Auditor), Cyber Resilience (NIS2, CRA), Risikomanagement, bundesweites Lieferanten-Risikomanagement, DSGVO / Privacy
+- **Innovation & Angewandte KI:** Robotic Process Automation (RPA), KI-gestützte Betrugserkennung (VPK-KI), Big-Data-Pipelines, REST-APIs, Golang, Python, Java, Test-Driven Development (TDD)
 
 ---
 
 ## Beruflicher Werdegang
 
 ### Österreichische Gesundheitskasse (ÖGK)
-*November 2020 – Heute | Graz / Wien*
+*Gesamtdauer: November 2020 – Heute | Graz / Wien*
 
-#### Information Security Manager / Product Owner ISMS *(Mai 2025 – Heute)*
-- Product Owner für das Information Security Management System (ISO 27001) im Büro des CISO für 12.000+ Mitarbeiter:innen und 7,4 Mio. Versicherte.
-- Etablierung des enterpriseweiten InfoSec-Risikomanagements und operativer Treatment-Workflows über IT- und Fachbereiche hinweg.
-- Leitung einer 10-köpfigen sozialträgerübergreifenden Arbeitsgruppe aller österreichischen Sozialversicherungsträger; Verabschiedung der SV-weiten Richtlinie zum Lieferantenmanagement.
-- Strategische und operative Vorbereitung europäischer Regularien (NIS2, RKEG, Cyber Resilience Act, EU AI Act).
+#### Information Security Manager *(Mai 2025 – Heute)*
+- Etablierung des enterpriseweiten InfoSec-Risikomanagements und operativer Treatment-Workflows über IT- und Fachbereiche hinweg für 12.000+ Mitarbeiter:innen und 7,4 Mio. Versicherte im Büro des CISO.
+- Leitung einer 10-köpfigen sozialträgerübergreifenden Arbeitsgruppe aller österreichischen Sozialversicherungsträger; Konzeption und Verabschiedung der bundesweiten SV-Richtlinie zum Lieferantenmanagement.
+- Strategische und operative Vorbereitung europäischer Cyber-Resilience-Vorgaben (NIS2, RKEG, Cyber Resilience Act, EU AI Act).
+- Steuerte bis August 2026 als Product Owner den konzernweiten Aufbau und die Operationalisierung des Information Security Management Systems (ISO 27001).
 
 #### Innovationsmanager & Organisator *(November 2020 – Mai 2025)*
-- **Robotic Process Automation (RPATF):** Initiativen- & Projektleitung für RPA in der ÖGK; Gesamtkonzeption der Organisation; produktiver Rollout von 6 Software-Robotern (u. a. automatisierte Krankengeld-Auszahlungen) aus 40+ Use Cases.
-- **KI-gestützte Betrugserkennung (VPK-KI):** Technische Leitung und stv. Projektleitung für datenorientierte Erkennung von Abrechnungsauffälligkeiten in Vertragspartnerdaten; DSGVO-konforme Verarbeitung sensibler Massendaten.
-- **Digitale Fabrik:** Erarbeitung agiler Vorgehensmodelle (Design Sprints) für rasches Prototyping; interner IT-Chatbot-Demonstrator.
+- **Robotic Process Automation (RPATF):** Leitung des RPA-Programms in der ÖGK; Gesamtkonzeption der Organisation; produktiver Rollout von 6 Software-Robotern (u. a. automatisierte Krankengeld-Auszahlungen) aus 40+ Use Cases.
+- **KI-gestützte Betrugserkennung (VPK-KI):** Technische Leitung bei der datenorientierten Erkennung von Abrechnungsauffälligkeiten in Vertragspartnerdaten; DSGVO-konforme Verarbeitung sensibler Massendaten.
+- **Digitale Fabrik & Prototyping:** Erarbeitung agiler Vorgehensmodelle (Design Sprints) für rasches Prototyping; Konzeption interner KI-Demonstratoren.
 
 ### Dynatrace
 #### Development Team Lead *(März 2019 – April 2020 | Graz)*
-- Disziplinäre und fachliche Führung sowie Aufbau eines agilen Engineering-Teams (bis zu 10 Software Engineers) am Standort Graz; globale Abstimmung mit Linz, Detroit und Danzig.
+- Disziplinäre und fachliche Leitung sowie Aufbau eines agilen Engineering-Teams (bis zu 10 Software Engineers) am Standort Graz; globale Abstimmung mit Linz, Detroit und Danzig.
 - Microservice-Architekturen auf Kubernetes / AWS für Lizenzmanagement und prädiktive Analytik; Tooling mit Golang und Python.
-- Technische Begleitung und Implementierung von Compliance-Kontrollen für das SOX-Audit im Rahmen des NYSE-Börsengangs.
+- Implementierung technischer Compliance-Kontrollen für das SOX-Audit im Rahmen des NYSE-Börsengangs.
 
 <div class="page-break"></div>
 
