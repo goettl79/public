@@ -5,73 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Lebenslauf von Georg Öttl, Innovation Manager bei der Österreichischen Gesundheitskasse. Expertise in DevOps, Microservices, Künstliche Intelligenz und Robotic Process Automation (RPA).">
-    <meta name="author" content="Georg Öttl">
-    <meta name="keywords" content="Georg Öttl, Lebenslauf, Innovation Manager, DevOps, Microservices, Künstliche Intelligenz, RPA">
-    <title>Lebenslauf - Georg Öttl</title>
+        content="Lebenslauf und Portfolio von Dipl.-Ing. Georg Öttl, Information Security Manager und IT-Führungskraft. Expertise in Informationssicherheit (ISO 27001, NIS2), Cloud-Native Architekturen, DevOps und Angewandter KI.">
+    <meta name="author" content="Dipl.-Ing. Georg Öttl">
+    <meta name="keywords" content="Georg Öttl, Lebenslauf, Information Security Manager, CISO, ISO 27001, NIS2, DevOps, Microservices, Cloud, KI, RPA">
+    <title>Lebenslauf - Dipl.-Ing. Georg Öttl</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f8fafc;
+            color: #1e293b;
             line-height: 1.7;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 35px 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
 
         header {
             text-align: center;
             margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e2e8f0;
         }
 
         header img {
-            max-width: 120px;
+            max-width: 130px;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            border: 3px solid #0f2b5c;
         }
 
         header h1 {
-            margin-top: 15px;
-            font-size: 2.5em;
-            color: #2c3e50;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-size: 2.4em;
+            color: #0f2b5c;
+            font-weight: 800;
         }
 
-        header p {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 5px;
+        header p.title {
+            font-size: 1.25em;
+            color: #1d4ed8;
+            font-weight: 600;
+            margin: 4px 0;
+        }
+
+        header p.org {
+            font-size: 1.1em;
+            color: #334155;
+            margin: 4px 0;
+        }
+
+        header p.location {
+            font-size: 0.95em;
+            color: #64748b;
+            margin-top: 2px;
+        }
+
+        .header-actions {
+            margin-top: 20px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #0f2b5c;
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 6px rgba(15, 43, 92, 0.2);
+        }
+
+        .btn-download:hover {
+            background-color: #1d4ed8;
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(29, 78, 216, 0.3);
+            text-decoration: none;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         section h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #0f2b5c;
+            border-bottom: 2px solid #0f2b5c;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
         }
 
         section p,
         section ul li {
-            font-size: 1.1em;
-            margin-bottom: 10px;
+            font-size: 1.05em;
+            margin-bottom: 8px;
         }
 
         .contact ul,
         .skills ul,
         .languages ul,
+        .certifications ul,
         .publications ul {
             padding-left: 20px;
         }
@@ -79,55 +124,82 @@
         .contact ul li,
         .skills ul li,
         .languages ul li,
+        .certifications ul li,
         .publications ul li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .contact a {
-            color: #2980b9;
+        a {
+            color: #1d4ed8;
             text-decoration: none;
         }
 
-        .contact a:hover {
+        a:hover {
+            color: #0f2b5c;
             text-decoration: underline;
         }
 
         .summary p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             line-height: 1.8;
-            color: #444;
+            color: #334155;
+        }
+
+        article {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        article:last-child {
+            border-bottom: none;
         }
 
         article h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #34495e;
+            font-size: 1.3em;
+            margin: 0 0 4px 0;
+            color: #0f2b5c;
         }
 
-        article p {
-            margin: 5px 0 15px;
+        article p.role-meta {
+            font-size: 1.05em;
+            color: #1d4ed8;
+            font-weight: 600;
+            margin: 2px 0 6px 0;
         }
 
-        a:hover {
-            color: #ff5722;
+        article p.role-period {
+            font-size: 0.9em;
+            color: #64748b;
+            margin: 0 0 10px 0;
+        }
+
+        article ul {
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+
+        article ul li {
+            font-size: 1em;
+            margin-bottom: 6px;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            header p,
-            section p {
-                font-size: 1em;
-            }
-
             .container {
-                padding: 10px;
+                margin: 15px;
+                padding: 20px;
             }
 
-            .contact ul, .skills ul, .languages ul, .publications ul {
-                padding-left: 10px;
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p.title {
+                font-size: 1.1em;
+            }
+
+            section h2 {
+                font-size: 1.3em;
             }
         }
     </style>
@@ -136,100 +208,162 @@
 <body>
     <div class="container">
         <header>
-            <img src="me.jpeg" alt="Portrait von Georg Öttl">
-            <h1>Georg Öttl</h1>
-            <p><em>Informatiker, Innovationsmanager und Projektleiter mit umfassender technischer Expertise</em></p>
-            <p><strong>@ Österreichische Gesundheitskasse</strong></p>
-            <p>Graz, Steiermark, Österreich</p>
+            <img src="me.jpeg" alt="Portrait von Dipl.-Ing. Georg Öttl">
+            <h1>Dipl.-Ing. Georg Öttl</h1>
+            <p class="title">Information Security Manager &amp; IT-Führungskraft</p>
+            <p class="org"><strong>Österreichische Gesundheitskasse (ÖGK)</strong> — Büro des CISO / IT- und Unternehmenssicherheit</p>
+            <p class="location">Graz, Steiermark, Österreich</p>
+            <div class="header-actions">
+                <a href="cv.pdf" class="btn-download" target="_blank">📄 Executive CV herunterladen (PDF)</a>
+            </div>
         </header>
 
         <section class="contact">
             <h2>Kontakt</h2>
             <address>
                 <ul>
-                    <li>Email: <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/georgoettl">linkedin.com/in/georgoettl</a></li>                
+                    <li><strong>E-Mail:</strong> <a href="mailto:georg.oettl@gmail.com">georg.oettl@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/georgoettl" target="_blank">linkedin.com/in/georgoettl</a></li>
+                    <li><strong>Web:</strong> <a href="https://oettl.work">oettl.work</a></li>
                 </ul>
             </address>
         </section>
 
+        <section class="summary">
+            <h2>Über mich</h2>
+            <p>Mit über 20 Jahren Erfahrung in der IT-Branche bin ich erfahrene IT-Führungskraft, Softwarearchitekt und Information Security Manager (Dipl.-Ing. Telematik, TU Graz). Mein Fokus liegt auf dem Aufbau robuster Informationssicherheit (ISO 27001, NIS2, CRA), moderner Cloud- und Microservice-Architekturen sowie der zielgerichteten Einführung digitaler Technologien und Prozessautomatisierung. Ich verbinde strategische Governance mit fundierter technischer Umsetzungskompetenz.</p>
+        </section>
+
         <section class="skills">
-            <h2>Fachkenntnisse</h2>
+            <h2>Fachkenntnisse &amp; Schwerpunkte</h2>
             <ul>
-                <li>Digitale Innovation und Automatisierung</li>
-                <li>Cloud-Native Anwendungen und Microservices</li>
-                <li>DevOps-Strategien und Agile Entwicklung</li>
-                <li>Datenanalyse und Künstliche Intelligenz</li>
+                <li><strong>Informationssicherheit &amp; Governance:</strong> ISMS (ISO 27001 Manager &amp; Auditor), Risikomanagement &amp; Treatment-Workflows, EU NIS2 &amp; Cyber Resilience Act (CRA), Sozialträger-übergreifendes Lieferanten-Risikomanagement, DSGVO / Privacy</li>
+                <li><strong>Cloud-Native Architekturen &amp; Microservices:</strong> Kubernetes (k8s), Docker, Microsoft Azure, AWS, Prometheus Monitoring, SRE &amp; DevOps Enablement</li>
+                <li><strong>IT-Führung &amp; Agile Methoden:</strong> Disziplinäre und fachliche Teamleitung (bis zu 200 Entwickler:innen / 30 Teams), Product Ownership (Agile / Scrum), Moderation komplexer Stakeholder-Gremien</li>
+                <li><strong>Automatisierung &amp; Angewandte KI:</strong> Robotic Process Automation (RPA), KI-gestützte Betrugserkennung (VPK-KI), Datenpipelines &amp; Sensorik</li>
+                <li><strong>Technologien &amp; Sprachen:</strong> Golang, Python, Java, Maven, REST APIs, Linux, Git, CI/CD-Pipelines</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Zertifizierungen &amp; Weiterbildung</h2>
+            <ul>
+                <li><strong>ISO 27001 Manager:in &amp; Auditor:in</strong> (TÜV / CIS)</li>
+                <li><strong>Certified Agile Test Driven Development (TDD)</strong></li>
+                <li><strong>Verhandeln nach Harvard</strong> (Coverdale) | <strong>Performance Management &amp; Coaching</strong> (Infonova)</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Relevante Berufserfahrung</h2>
+            
+            <article>
+                <h3>Österreichische Gesundheitskasse (ÖGK)</h3>
+                <p class="role-meta">Information Security Manager / Product Owner ISMS</p>
+                <p class="role-period">Mai 2025 – Heute | Graz / Wien</p>
+                <ul>
+                    <li>Product Owner für den Aufbau und die Weiterentwicklung des Information Security Management Systems (ISO 27001) im Büro des CISO für 12.000+ Mitarbeiter:innen und 7,4 Mio. Versicherte.</li>
+                    <li>Etablierung des enterpriseweiten InfoSec-Risikomanagements und operativer Treatment-Workflows über IT- und Fachbereiche hinweg.</li>
+                    <li>Leitung einer 10-köpfigen sozialträgerübergreifenden Arbeitsgruppe aller österreichischen Sozialversicherungsträger; Verabschiedung der SV-weiten Richtlinie zum Lieferantenmanagement.</li>
+                    <li>Strategische und operative Vorbereitung europäischer Regularien (NIS2, RKEG, Cyber Resilience Act, EU AI Act).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Österreichische Gesundheitskasse (ÖGK)</h3>
+                <p class="role-meta">Innovationsmanager &amp; Organisator</p>
+                <p class="role-period">November 2020 – Mai 2025 | Graz</p>
+                <ul>
+                    <li><strong>Robotic Process Automation (RPATF):</strong> Initiativen- &amp; Projektleitung für RPA in der ÖGK. Gesamtkonzeption der Organisation und produktiver Rollout von 6 Software-Robotern (u. a. automatisierte Krankengeld-Auszahlungen) aus einer Pipeline von 40+ Use Cases.</li>
+                    <li><strong>KI-gestützte Betrugserkennung (VPK-KI):</strong> Technische Leitung und stv. Projektleitung bei der Einführung eines Systems zur Erkennung von Abrechnungsauffälligkeiten in Vertragspartnerdaten unter voller DSGVO-Compliance.</li>
+                    <li><strong>Digitale Fabrik &amp; Prototyping:</strong> Erarbeitung agiler Vorgehensmodelle (Design Sprints) für rasches Prototyping sowie Konzeption interner KI-Demonstratoren.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>DCCS IT Business Solutions</h3>
+                <p class="role-meta">Lead Developer &amp; Softwarearchitekt</p>
+                <p class="role-period">Juli 2020 – Oktober 2020 | Graz</p>
+                <ul>
+                    <li>Konzeption containerbasierter Modernisierungsarchitekturen für einen deutschen Automobilhersteller; Projektkalkulationen und Architekturbewertungen.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Dynatrace</h3>
+                <p class="role-meta">Development Team Lead</p>
+                <p class="role-period">März 2019 – April 2020 | Graz</p>
+                <ul>
+                    <li>Disziplinäre und fachliche Leitung sowie Aufbau eines agilen Engineering-Teams (bis zu 10 Software Engineers) am Standort Graz; globale Abstimmung mit Linz, Detroit und Danzig.</li>
+                    <li>Einführung moderner Microservice-Architekturen auf Kubernetes / AWS Cloud für Lizenzmanagement und prädiktive Analytik; Tooling mit Golang und Python.</li>
+                    <li>Implementierung und Auditierung technischer Compliance-Kontrollen für das SOX-Audit im Rahmen des NYSE-Börsengangs.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>ALP.Lab GmbH (Testregion für automatisiertes Fahren)</h3>
+                <p class="role-meta">Lead Product Developer &amp; Product Manager</p>
+                <p class="role-period">März 2018 – Februar 2019 | Graz</p>
+                <ul>
+                    <li>Gesamtverantwortung für Produktdefinition, Cloud-Architektur und Rollout der ALP.Lab Datenplattform auf Microsoft Azure in unter 12 Monaten.</li>
+                    <li>Automatisierte Datenpipelines zur Erfassung, Validierung und DSGVO-konformen Video-/Telemetrie-Anonymisierung für Fahrzeugflotten; Definition offener REST-APIs (<a href="https://github.com/ALPLab/alplabapis" target="_blank">github.com/ALPLab/alplabapis</a>).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>BearingPoint</h3>
+                <p class="role-meta">Teamleiter DevOps &amp; Senior System Engineer</p>
+                <p class="role-period">Oktober 2010 – Februar 2018 | Graz / Unterpremstätten</p>
+                <ul>
+                    <li><strong>Leitung DevOps-Team (1,5 Jahre):</strong> Fachliche und disziplinäre Führung eines Kernplattform-Teams. Bereitstellung, Betrieb und Migration von über 120 Entwicklungs- und Plattform-Services für 200 Entwickler in bis zu 30 agilen Teams.</li>
+                    <li><strong>Senior System Engineer &amp; Integrationsarchitektur (5+ Jahre):</strong> Technische Leitung bei der kundenindividuellen Integration des Kernprodukts Infonova R6 in Telekommunikations-, Maut- und TV-Systeme internationaler Kunden.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Technische Universität Graz &amp; Know-Center</h3>
+                <p class="role-meta">Wissenschaftlicher Mitarbeiter &amp; Softwareentwickler</p>
+                <p class="role-period">Februar 2006 – Oktober 2010 | Graz</p>
+                <ul>
+                    <li><strong>TU Graz (2009 – 2010):</strong> R&amp;D im EU-FP7-Forschungsprojekt TARGET; erfolgreiche Akquise von 400.000 € EU-Fördermitteln für das <a href="https://cordis.europa.eu/project/id/258114/en" target="_blank">NextTell-Projekt</a>.</li>
+                    <li><strong>Know-Center (2006 – 2008):</strong> Java-Softwareentwicklung im KnowMiner-Framework (NLP/Text-Mining); Einführung des automatisierten Maven-Build-Systems.</li>
+                </ul>
+            </article>
+
+            <p><strong>Vollständiges Profil &amp; Netzwerk:</strong> <a href="https://www.linkedin.com/in/georgoettl" target="_blank">Dipl.-Ing. Georg Öttl @ LinkedIn</a></p>
+        </section>
+
+        <section class="education">
+            <h2>Ausbildung</h2>
+            <ul>
+                <li><strong>Dipl.-Ing. Telematik (Computer Engineering)</strong> (1999 – 2008) | Technische Universität Graz<br>
+                    <small>Schwerpunkte: Verteilte Systeme, Software-Architektur, IT-Sicherheit, Signalverarbeitung</small></li>
+                <li><strong>Auslandsstudium Computer Science</strong> (2004) | Norwegian University of Science and Technology (NTNU, Trondheim)</li>
+            </ul>
+        </section>
+
+        <section class="publications">
+            <h2>Veröffentlichungen &amp; Vorträge</h2>
+            <ul>
+                <li><a href="https://promcon.io/2017-munich/talks/analyze-prometheus-metrics-like-a-data-scientist/" target="_blank">Analyze Prometheus Metrics like a Data Scientist</a> (PromCon München / Google)</li>
+                <li><a href="https://jax.de/devops-continuous-delivery/software-monitoring-mit-prometheus/" target="_blank">Softwaremonitoring mit Prometheus</a> (JAX Mainz/Berlin)</li>
+                <li><a href="https://jaxenter.de/devops-oettl-infonova-50400" target="_blank">DevOps in der Praxis: Kollaborative Zusammenarbeit in fehlertoleranten Umgebungen</a> (JAXenter)</li>
+                <li><a href="https://www.ots.si/Prejsnje_konference/OTS_2012/Povzetki.html" target="_blank">Lessons learned in distributed agile engineering on a large scale integration solution</a> (OTS Konferenz Maribor)</li>
+                <li><a href="https://www.iadisportal.org/digital-library/knowledge-discovery-using-the-knowminer-framework" target="_blank">Knowledge Discovery mit dem Knowminer Framework</a> (IADIS)</li>
+                <li><a href="https://jaxenter.de/mesos-docker-coreos-wie-sie-builds-reproduzierbar-machen-30901" target="_blank">Mesos, Docker, CoreOS: Reproduzierbare Builds</a> (JAXenter)</li>
             </ul>
         </section>
 
         <section class="languages">
             <h2>Sprachkenntnisse</h2>
             <ul>
-                <li>Deutsch (Muttersprache)</li>
-                <li>Englisch (Proficient)</li>
-            </ul>
-        </section>
-
-        <section class="summary">
-            <h2>Über mich</h2>
-            <p>Mit über 15 Jahren Erfahrung in der IT-Branche bin ich ein Innovationstreiber, spezialisiert auf die
-                Modernisierung von IT-Systemen und die Einführung digitaler Technologien. Ich habe erfolgreich
-                transformative Projekte geleitet, in ihnen gearbeitet und konnte hier umfänglich Erfahrungen sammeln.
-                Meine Leidenschaft liegt in der Lösung komplexer technischer Herausforderungen, wobei ich stets auf
-                Qualität setze.</p>
-        </section>
-
-        <section class="experience">
-            <h2>Relevante Berufserfahrung</h2>
-            <article>
-                <h3>Österreichische Gesundheitskasse</h3>
-                <p><strong>Innovation Manager</strong> </p>
-                <p>Leitung strategischer Projekte und Initiativen, Implementierung von KI- und RPA-Lösungen sowie
-                    Digitalisierung von Unternehmensprozessen.</p>
-            </article>
-
-            <article>
-                <h3>Dynatrace</h3>
-                <p><strong>Development Team Lead</strong></p>
-                <p>Leitung und Kick-Off eines Entwicklerteams zur Implementierung von Business- und Automatisierung
-                    Projekten im Bereich Geschäfts- und Lizenzmodellen sowie prädiktiver Analytik.</p>
-            </article>
-
-            <article>
-                <h3>BearingPoint</h3>
-                <p><strong>Development Team Lead</strong></p>
-                <p>Als Teamleiter organisierte ich ein DevOps-Team und führte containerbasierte Technologien
-                    unternehmensweit ein. Wir entwickelten und migrierten über 120 Services für 200 Entwickler im
-                    Konzern.</p>
-                <p>Als Senior Engineer integrierte ich das Hauptprodukt "R6" in Systeme von Telefonie-, Maut- und
-                    TV-Anbietern. Ich präsentierte agile Projekterfahrungen auf der OTS-Konferenz in Maribor.</p>
-            </article>
-
-            <article>
-                <h3>Technische Universität Graz & Know-Center</h3>
-                <p><strong>Research Assistant / Computer Scientist</strong></p>
-                <p>Wissenschaftlicher Assistent und Java-Entwickler in verschiedenen Forschungsprojekten mit dem
-                    Schwerpunkt KI und NLP. Erfolgreiche Akquise von 400.000 € für das <a href="https://cordis.europa.eu/project/id/258114/en">NextTell-Projekt</a> und Entwicklung
-                    eines Prototyps für das Bundesministerium für Finanzen im Bereich Wissensmanagement.</p>
-            </article>
-
-            <p><strong>Voller Lebenslauf:</strong> <a href="https://www.linkedin.com/in/georgoettl">Georg
-                    Öttl@LinkedIn</a></p>
-        </section>
-
-        <section class="publications">
-            <h2>Veröffentlichungen</h2>
-            <ul>
-                <li><a href="https://jax.de/devops-continuous-delivery/software-monitoring-mit-prometheus/" target="_blank">Softwaremonitoring mit Prometheus</a></li>
-                <li><a href="https://jaxenter.de/devops-oettl-infonova-50400"  target="_blank">DevOps in der Praxis</a></li>
-                <li><a href="https://www.iadisportal.org/digital-library/knowledge-discovery-using-the-knowminer-framework"  target="_blank">Knowledge Discovery mit dem Knowminer Framework</a></li>
-                <li><a href="https://www.ots.si/Prejsnje_konference/OTS_2012/Povzetki.html"  target="_blank">Erfahrungen in der verteilten agilen Entwicklung</a></li>
-                <li><a href="https://jaxenter.de/mesos-docker-coreos-wie-sie-builds-reproduzierbar-machen-30901">Mesos, Docker, CoreOS: Reproduzierbare Builds</a></li>
+                <li><strong>Deutsch:</strong> Muttersprache</li>
+                <li><strong>Englisch:</strong> Verhandlungssicher (C2 / Proficient)</li>
+                <li><strong>Französisch:</strong> Grundkenntnisse</li>
             </ul>
         </section>
     </div>
-    <div style="display:none"><a href="https://graz.social/@goettl">Mastodon</a></div>
+    <div style="display:none"><a href="https://graz.social/@goettl" rel="me">Mastodon</a></div>
 </body>
 
 </html>

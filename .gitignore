@@ -1,2 +1,3 @@
 *.pdf
-
+!cv.pdf
+*.docx
